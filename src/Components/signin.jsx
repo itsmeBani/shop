@@ -48,6 +48,9 @@ function Signin() {
                 }
                 if(response.data.message.role==="admin"){
                     navigate('/');
+
+
+                    console.log(response)
                     setAdminToken(response.data.message.data)
                 }
 
@@ -57,7 +60,9 @@ function Signin() {
 
             } else {
                 setError(response.data.message);
+                console.log(response.data)
             }
+
         } catch (error) {
             setMessage('An error occurred while logging in.');
         }

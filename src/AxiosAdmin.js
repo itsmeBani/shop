@@ -1,7 +1,7 @@
 // src/api.js
 import axios from 'axios';
 import {useEffect} from "react";
-const API_BASE_URL = 'https://bsit3rdyear.org/Worksheets/ws5-2/api/api/'; // Replace with your actual API base URL
+const API_BASE_URL = 'https://phoneshop.dyipspot.com/'; // Replace with your actual API base URL
 
 export const createUser = (username, password, firstname, lastname, address) => {
     return axios.post(`${API_BASE_URL}/Register.php`, {
